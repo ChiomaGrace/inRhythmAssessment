@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="row">
+        <h1 class="text-center">inRhythm Assessment</h1>
+    </div>
+    <div class="row ml-4">
+        <app-rating (ratingsData)="getRatingsData($any($event))"></app-rating>
+    </div>
+    <div class="row ml-4">
+        <app-specific-rating [ratingsArray] = "receivedRatingsData"></app-specific-rating>
+    </div>
+    <div class="row ml-4">
+        <app-average [ratingsArray] = "receivedRatingsData"></app-average>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

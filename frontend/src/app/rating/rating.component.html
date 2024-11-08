@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <h1 class="text-primary mb-3">Ratings:</h1>
+    <div *ngFor="let rating of ratings; let j = index">
+        <span *ngIf="j < 3">
+            <span *ngFor="let i of [].constructor(rating.starCount)">
+                <i class="fa fa-star"></i> 
+            </span>
+            <span *ngFor="let i of [].constructor(rating.nonFilledStarCount)">
+                <i class="fa-regular fa-star"></i>
+            </span>
+            <h3>{{rating.name}}</h3>
+            <p>{{rating.content}}</p>
+        </span>
+    </div>
+</div>

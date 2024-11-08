@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <h1 class="text-primary mb-3">Spotlight Rating:</h1>
+        <div>
+            <span *ngFor="let i of [].constructor(this.averageRating)">
+                <i class="fa fa-star"></i> 
+            </span>
+            <span *ngFor="let i of [].constructor(this.nonFilteredStars)">
+                <i class="fa-regular fa-star mb-4"></i>
+            </span>
+            <h3>{{name}}</h3>
+            <p>{{content}}</p>
+        </div>
+</div>
